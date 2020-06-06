@@ -4,7 +4,7 @@
 }
 
 #name > img {
-    width: 250px;
+    width: 240px;
 }
 
 #name > span {
@@ -17,7 +17,11 @@
 }
 
 .MuiSlider-track {
-    background-color: none !important;
+    height: 0 !important;
+}
+
+.MuiSlider-markLabel {
+    top: 30px !important;
 }
 
 a {
