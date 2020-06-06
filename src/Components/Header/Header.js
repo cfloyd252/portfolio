@@ -2,6 +2,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import Slider from '@material-ui/core/Slider';
+import './Header.css'
 
 const marks = [
     {
@@ -36,7 +37,9 @@ export class Header extends Component {
     render() {
         return (
             <header>
-                Header
+                <div id='name'>
+                <span role='img' aria-label='Programmer'>👨🏽‍💻</span><img src={require('../../images/icons/name.png')} alt='Christopher Floyd Logo'/><span role='img'>👨🏽‍💻</span>
+                </div>
                 <Slider 
                   defaultValue={0}
                   onChange={(e, value) => this.updateSectionView(value)}

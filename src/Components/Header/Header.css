@@ -1,0 +1,25 @@
+#name {
+    display: flex;
+    align-items: center;
+}
+
+#name > img {
+    width: 250px;
+}
+
+#name > span {
+    padding-bottom: 5px;
+}
+
+.MuiSlider-root {
+    color: white !important;
+    margin-top: -15px;
+}
+
+.MuiSlider-track {
+    background-color: none !important;
+}
+
+a {
+    color: white;
+}
