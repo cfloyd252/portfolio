@@ -1,0 +1,12 @@
+footer > a {
+    cursor: pointer;
+    width: 33.3333333%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+a > img {
+    height: 90%;
+}

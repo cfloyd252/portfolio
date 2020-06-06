@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body, #root, #app {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+      position: fixed;
+      top: 87px;
+      bottom: 10%;
+      left: 0;
+      right: 0;
+      display: flex;
+      overflow-y: scroll;
+      overflow-x: hidden;
+  }
+
+  footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 10%;
+      padding: 8px;
+      display: flex;
+      justify-content: space-evenly;
+  }
