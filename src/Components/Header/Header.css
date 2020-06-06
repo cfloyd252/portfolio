@@ -8,7 +8,8 @@
 }
 
 #name > span {
-    padding-bottom: 5px;
+    font-size: 20px;
+    padding-bottom: 8px;
 }
 
 .MuiSlider-root {
@@ -26,4 +27,15 @@
 
 a {
     color: white;
+}
+
+@media screen and (min-width: 680px) {
+    #name > img {
+        width: 300px;
+    }
+
+    #name > span {
+        font-size: 30px;
+        padding-bottom: 8px;
+    }
 }

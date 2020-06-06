@@ -39,6 +39,7 @@
     padding: 10px;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+    justify-content: center;
   }
 
   footer {
@@ -51,3 +52,14 @@
       display: flex;
       justify-content: space-evenly;
   }
+
+  @media screen and (min-width: 680px) {
+    header {
+      height: 100px;
+      padding: 5px 20%;
+    }
+
+    main {
+      top: 100px;
+    }
+}

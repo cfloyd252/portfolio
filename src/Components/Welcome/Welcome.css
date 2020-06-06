@@ -1,0 +1,13 @@
+#welcome > img {
+    width: 80%;
+}
+
+#welcome > h2 {
+    margin-top: 0;
+}
+
+@media screen and (min-width: 680px) {
+    #welcome > img {
+        width: 25%;
+    }
+}
