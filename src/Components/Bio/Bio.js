@@ -1,24 +1,34 @@
 import React, { Component } from 'react'
+import './Bio.css'
 
 export class Bio extends Component {
     render() {
         return (
             <main id='bio'>
+                <img id='mountains' src={require('../../images/mountains.jpg')} alt='Mountains in Superior, Arizona'/>
                 <p>
                   Going from a small town boy with big aspirations to being able to call 
                   myself a father and web developer has been quite a journey. It all 
-                  started with going to math camp (Well, it was more of a math and science 
+                  started with going to math camp. Well... it was more of a math and science 
                   honors program that high school students attended during their summer 
-                  break). That’s what sparked my interest in coding. My first 
+                  break. That’s what sparked my interest in the STEM field. My first 
                   experience with this new found passion by becoming the head programmer 
                   for my high school robotics team for the remaining 3 years of high school.
                   From there, I continued to take Computer Science college courses while 
-                  raising and providing for two wonderful boys. Any free time I had was 
+                  raising and providing for my son. Any free time I had was 
                   spent either going on runs or playing video games on my custom built 
                   computer. After spending years in customer service related jobs and now 
-                  that my boys are becoming more independent, I finally found the time and 
+                  that my boy is becoming more independent, I finally found the time and 
                   opportunity to rekindle my passion for coding.
                 </p>
+                <div id='img_container'>
+                    <img src={require('../../images/Julius&I.jpg')} />
+                    <img src={require('../../images/usb.jpg')} />
+                    <img src={require('../../images/superman.jpg')} />
+                    <img src={require('../../images/lake.jpg')} />
+                    <img src={require('../../images/run.jpeg')} />
+                    <img src={require('../../images/robotics_team.jpg')} />
+                </div>
             </main>
         )
     }

@@ -6,7 +6,7 @@ export class Welcome extends Component {
         return (
             <main id='welcome'>
                 <h2 id="opening_statement">My name is Chris and I went to math camp.</h2>
-                <img src={require('../../images/fallout_suit.jpeg')}/>
+                <img src={require('../../images/fallout_suit.jpg')} alt='Christopher Floyd in cosplay'/>
             </main>
         )
     }

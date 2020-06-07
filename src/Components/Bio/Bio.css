@@ -1,0 +1,15 @@
+#bio {
+    justify-content: start;
+}
+
+#mountains {
+    width: 45%;
+}
+
+#img_container > img{
+    width: 295px;
+    margin-right: 2.5px;
+    margin-left: 2.5px;
+    justify-content: space-between;
+    border: 2px dotted black;
+}
