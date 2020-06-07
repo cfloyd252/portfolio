@@ -4,6 +4,7 @@
 
 #mountains {
     width: 45%;
+    min-width: 235px;
 }
 
 #img_container > img{
