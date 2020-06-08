@@ -13,12 +13,16 @@ export class Projects extends Component {
                     </div>
                     <p className='description'>
                         My Fit Journal is a web application that allows the the user to track their fitness progress by logging entries of different types 
-                        of fitness data. Currently there are logs for water consumtion, user's weight, and their exercises. In future updates, the user will 
+                        of fitness data. Currently there are logs for water consumtion, user's weight, and exercises completed. In future updates, the user will 
                         also be able to log meals and create a list of custom exercise names.
                     </p>
-                    <ul className='tech_used'>
-
-                    </ul>
+                    <div className='tech_used'>
+                        <img src={require('../../images/icons/html.png')} alt='HTML 5 logo'/>
+                        <img src={require('../../images/icons/js.png')} alt='Javascript logo'/>
+                        <img src={require('../../images/icons/css.png')} alt='CSS 5 logo'/>
+                        <img src={require('../../images/icons/postgresql.png')} alt='Postgres logo'/>
+                        <img src={require('../../images/icons/node.png')} alt='Node logo'/>
+                    </div>
                 </section>
                 <section id='habla'>
                     <a href='https://spaced-repitition-app.now.sh/' className='project_title'> Habla </a>
@@ -31,8 +35,13 @@ export class Projects extends Component {
                         translates into Engilsh using the spaced repetition technique. Meaning words that are harder to translate appear more often in
                         the front of the list. Finally, the user can keep track of the amount of times they answered a word correctly or incorrectly.
                     </p>
-                    <ul className='tech_used'>
-                    </ul>    
+                    <div className='tech_used'>
+                        <img src={require('../../images/icons/html.png')} alt='HTML 5 logo'/>
+                        <img src={require('../../images/icons/js.png')} alt='Javascript logo'/>
+                        <img src={require('../../images/icons/css.png')} alt='CSS 5 logo'/>
+                        <img src={require('../../images/icons/postgresql.png')} alt='Postgres logo'/>
+                        <img src={require('../../images/icons/node.png')} alt='Node logo'/>
+                    </div>    
                 </section>
                 <section id='cos'>
                     <a href='https://cup-of-sugar.pengin-san.now.sh/' className='project_title'> Cup of Sugar </a>
@@ -45,8 +54,14 @@ export class Projects extends Component {
                         based on mutual aid. Users can post offers and requests to a public bulletin board, where other users can respond by post comments 
                         or messaging other users privately.
                     </p>
-                    <ul className='tech_used'>
-                        </ul>    
+                    <div className='tech_used'>
+                        <img src={require('../../images/icons/html.png')} alt='HTML 5 logo'/>
+                        <img src={require('../../images/icons/js.png')} alt='Javascript logo'/>
+                        <img src={require('../../images/icons/css.png')} alt='CSS 5 logo'/>
+                        <img src={require('../../images/icons/postgresql.png')} alt='Postgres logo'/>
+                        <img src={require('../../images/icons/node.png')} alt='Node logo'/>
+                        <img src={require('../../images/icons/sass.png')} alt='Sass logo'/>
+                    </div>    
                 </section>
             </main>
         )
