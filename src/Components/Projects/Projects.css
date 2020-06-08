@@ -1,0 +1,21 @@
+#projects {
+  justify-content: start;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section > img {
+  width: 305px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 680px) {
+  .description {
+    width: 80%;
+  }
+}

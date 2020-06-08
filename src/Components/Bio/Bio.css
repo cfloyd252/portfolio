@@ -3,8 +3,8 @@
 }
 
 #mountains {
-    width: 45%;
-    min-width: 235px;
+    height: 100%;
+    max-width: 90%
 }
 
 #img_container > img{
@@ -14,3 +14,9 @@
     justify-content: space-between;
     border: 2px dotted black;
 }
+
+@media screen and (min-width: 680px) {
+    #bio > p {
+      width: 80%;
+    }
+  }
