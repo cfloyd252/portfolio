@@ -48,7 +48,7 @@ export class Projects extends Component {
                     <a href='https://cup-of-sugar.pengin-san.now.sh/' target='_blank' className='project_title'> Cup of Sugar </a>
                     <img className='project_screenshot' src={require('../../images/cos.jpg')} alt='' />
                     <div className='repo_links'>
-                        <a href='' target='_blank' className='repo_link'> Client Repo </a> || <a href='' target='_blank' className='repo_link'> API Repo </a>
+                        <a href='https://github.com/thinkful-ei-leopard/cup-of-sugar-client' target='_blank' className='repo_link'> Client Repo </a> || <a href='https://github.com/thinkful-ei-leopard/cup-of-sugar-api' target='_blank' className='repo_link'> API Repo </a>
                     </div>
                     <p className='description'>
                         Cup of Sugar is a localized, community-oriented application that aims to bring neighbors closer together by fostering connections 
