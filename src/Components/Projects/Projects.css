@@ -12,6 +12,7 @@ section > img {
   width: 305px;
   margin-top: 5px;
   margin-bottom: 5px;
+  border: 1px solid black;
 }
 
 .tech_used > img {
@@ -19,8 +20,18 @@ section > img {
   margin-right: 5px;
 }
 
-#projects > a {
-  color: black !important;
+#projects a {
+  color: black;
+}
+
+#projects .project_title {
+  font-family: 'Bitter', serif;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.repo_link {
+  font-size: 20px;
 }
 
 @media screen and (min-width: 680px) {

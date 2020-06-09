@@ -25,8 +25,8 @@
     top: 30px !important;
 }
 
-a {
-    color: white;
+header a {
+    color: white !important;
 }
 
 @media screen and (min-width: 680px) {

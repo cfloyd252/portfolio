@@ -7,13 +7,13 @@ export class Bio extends Component {
             <main id='bio'>
                 <img id='mountains' src={require('../../images/mountains.jpg')} alt='Mountains in Superior, Arizona'/>
                 <p>
-                  Going from a small town boy with big aspirations to being able to call 
+                  Growing up in the mountainous small town of Superior, AZ with big aspirations to being able to call 
                   myself a father and web developer has been quite a journey. It all 
                   started with going to math camp. Well... it was more of a math and science 
                   honors program that high school students attended during their summer 
                   break. That’s what sparked my interest in the STEM field. My first 
-                  experience with this new found passion by becoming the head programmer 
-                  for my high school robotics team for the remaining 3 years of high school.
+                  experience with this new found passion was becoming the head programmer 
+                  for my high school robotics team. I would continue to hold that title for the next 3 years.
                   From there, I continued to take Computer Science college courses while 
                   raising and providing for my son. Any free time I had was 
                   spent either going on runs or playing video games on my custom built 

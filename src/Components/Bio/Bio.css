@@ -4,7 +4,8 @@
 
 #mountains {
     height: 100%;
-    max-width: 90%
+    max-width: 90%;
+    border: 1px solid black
 }
 
 #img_container > img{

@@ -6,10 +6,10 @@ export class Projects extends Component {
         return (
             <main id='projects'>
                 <section id='mfj'>
-                    <a href='https://my-fit-journal.now.sh/' className='project_title'> My Fit Journal </a>
+                    <a href='https://my-fit-journal.now.sh/' target='_blank' className='project_title'> My Fit Journal </a>
                     <img className='project_screenshot' src={require('../../images/mfj.jpg')} alt='' />
                     <div className='repo_links'>
-                        <a href='https://github.com/cfloyd252/My-Fit-Journal-Client' className='client_repo'> Client Repo </a> || <a href='https://github.com/cfloyd252/my-fit-journal-api' className='server_repo'> API Repo </a>
+                        <a href='https://github.com/cfloyd252/My-Fit-Journal-Client' target='_blank' className='repo_link'> Client Repo </a> || <a href='https://github.com/cfloyd252/my-fit-journal-api' target='_blank' className='repo_link'> API Repo </a>
                     </div>
                     <p className='description'>
                         My Fit Journal is a web application that allows the the user to track their fitness progress by logging entries of different types 
@@ -25,10 +25,10 @@ export class Projects extends Component {
                     </div>
                 </section>
                 <section id='habla'>
-                    <a href='https://spaced-repitition-app.now.sh/' className='project_title'> Habla </a>
+                    <a href='https://spaced-repitition-app.now.sh/' target='_blank' className='project_title'> Habla </a>
                     <img className='project_screenshot' src={require('../../images/habla.jpg')} alt='' />
                     <div className='repo_links'>
-                        <a href='https://github.com/thinkful-ei-leopard/spaced-repitition-jose-christopher-client' className='client_repo'> Client Repo </a> || <a href='https://github.com/JozyL27/spaced-repetition-api' className='server_repo'> API Repo </a>
+                        <a href='https://github.com/thinkful-ei-leopard/spaced-repitition-jose-christopher-client' target='_blank' className='repo_link'> Client Repo </a> || <a href='https://github.com/JozyL27/spaced-repetition-api' target='_blank' className='repo_link'> API Repo </a>
                     </div>
                     <p className='description'>
                         Habla is an application that assists the user in learning spanish. This is done by having a list of spanish words the user 
@@ -44,10 +44,10 @@ export class Projects extends Component {
                     </div>    
                 </section>
                 <section id='cos'>
-                    <a href='https://cup-of-sugar.pengin-san.now.sh/' className='project_title'> Cup of Sugar </a>
+                    <a href='https://cup-of-sugar.pengin-san.now.sh/' target='_blank' className='project_title'> Cup of Sugar </a>
                     <img className='project_screenshot' src={require('../../images/cos.jpg')} alt='' />
                     <div className='repo_links'>
-                        <a href='' className='client_repo'> Client Repo </a> || <a href='' className='server_repo'> API Repo </a>
+                        <a href='' target='_blank' className='repo_link'> Client Repo </a> || <a href='' target='_blank' className='repo_link'> API Repo </a>
                     </div>
                     <p className='description'>
                         Cup of Sugar is a localized, community-oriented application that aims to bring neighbors closer together by fostering connections 

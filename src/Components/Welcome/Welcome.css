@@ -1,9 +1,11 @@
 #welcome > img {
     width: 80%;
+    border: 1px solid black;
 }
 
 #welcome > h2 {
     margin-top: 0;
+    font-family: 'Noto Sans HK', sans-serif;
 }
 
 @media screen and (min-width: 680px) {

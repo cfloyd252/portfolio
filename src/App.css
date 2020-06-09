@@ -1,65 +1,71 @@
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
   
-  html, body, #root, #app {
-    margin: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
+html, body, #root, #app {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5px 15%;
+  height: 90px;
+  background-color: black;
+}
+
+main {
+  position: fixed;
+  top: 90px;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  display: flex;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  justify-content: center;
+  background-color: #8EC87E;
+}
+
+footer {
+  position: fixed;
+  border: 1px solid black;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 10%;
+  padding: 8px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+p {
+  font-family: 'Noto Sans HK', sans-serif;
+}
+
+@media screen and (min-width: 680px) {
   header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 5px 15%;
-    height: 90px;
-    background-color: black;
+    height: 100px;
+    padding: 5px 20%;
   }
 
   main {
-    position: fixed;
-    top: 90px;
-    bottom: 10%;
-    left: 0;
-    right: 0;
-    display: flex;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    justify-content: center;
-    background-color: #8EC87E;
+    top: 100px;
   }
-
-  footer {
-    position: fixed;
-    border: 1px solid black;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 10%;
-    padding: 8px;
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  @media screen and (min-width: 680px) {
-    header {
-      height: 100px;
-      padding: 5px 20%;
-    }
-
-    main {
-      top: 100px;
-    }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bitter:wght@700&family=Noto+Sans+HK:wght@500&display=swap');
