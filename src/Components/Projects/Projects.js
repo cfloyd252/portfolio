@@ -13,8 +13,9 @@ export class Projects extends Component {
                     </div>
                     <p className='description'>
                         My Fit Journal is a web application that allows the the user to track their fitness progress by logging entries of different types 
-                        of fitness data. Currently there are logs for water consumtion, user's weight, and exercises completed. In future updates, the user will 
+                        of fitness data. Currently there are logs for water consumption, user's weight, and exercises completed. In future updates, the user will 
                         also be able to log meals and create a list of custom exercise names.
+
                     </p>
                     <div className='tech_used'>
                         <img src={require('../../images/icons/html.png')} alt='HTML 5 logo'/>
@@ -32,7 +33,7 @@ export class Projects extends Component {
                     </div>
                     <p className='description'>
                         Habla is an application that assists the user in learning spanish. This is done by having a list of spanish words the user 
-                        translates into Engilsh using the spaced repetition technique. Meaning words that are harder to translate appear more often in
+                        translates into English using the spaced repetition technique. Meaning words that are harder to translate appear more often in
                         the front of the list. Finally, the user can keep track of the amount of times they answered a word correctly or incorrectly.
                     </p>
                     <div className='tech_used'>

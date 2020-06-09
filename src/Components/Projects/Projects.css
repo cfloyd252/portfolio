@@ -38,4 +38,8 @@ section > img {
   .description {
     width: 80%;
   }
+
+  section > img {
+    width: 600px
+  }
 }
