@@ -1,0 +1,21 @@
+#TwentyFortyEight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+ text-align: center;
+}
+
+#grid {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#grid > p {
+  border: 1px solid black;
+  width: 25%;
+  text-align: center;
+  margin: 0;
+}

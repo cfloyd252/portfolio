@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './TwentyFortyEight.css'
 
 export class TwentyFortyEight extends Component {
   state = {
@@ -18,9 +19,11 @@ export class TwentyFortyEight extends Component {
     })
 
     return (
-      <div>
-        <h1>Hello</h1>
-        {displayIndexValues}
+      <div id='TwentyFortyEight'>
+        <h1>2048</h1>
+        <div id='grid'>
+          {displayIndexValues}
+        </div>
       </div>
     )
   }
