@@ -10,13 +10,17 @@ function TwentyFortyEight() {
     [ 0, 0, 0, 0]
   ])
 
+  useEffect(() => {
+    initGrid()
+  }, [])
+
   // Initialize
   const initGrid = () => {
     let newGrid = cloneDeep(gridData)
-    let newClone = cloneDeep(gridData)
 
     addNewNumber(newGrid)
     addNewNumber(newGrid)
+    setGridData(newGrid)
   }
 
   //Add new number
@@ -25,15 +29,18 @@ function TwentyFortyEight() {
     let gridFull = false;
 
     while(!added) {
+      console.log('addNewNumber')
       if (gridFull) {
         break;
       }
 
       let rand1 = Math.floor(Math.random() * 4)
       let rand2 = Math.floor(Math.random() * 4)
+      console.log(rand1)
+      console.log(rand2)
 
       if (grid[rand1][rand2] === 0) {
-        grid[rand1][rand2] = Math.random() > 0.5 ? 2 :4;
+        grid[rand1][rand2] = Math.random() > 0.5 ? 2 : 4;
         added = true;
       }
     }
@@ -51,7 +58,6 @@ function TwentyFortyEight() {
       <div id='grid'>
         {displayGrid}
       </div>
-      <button onClick={() => initGrid()}></button>
     </div>
   )
 }
