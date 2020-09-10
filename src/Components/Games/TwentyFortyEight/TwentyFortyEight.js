@@ -14,7 +14,7 @@ export class TwentyFortyEight extends Component {
   render() {
     const displayIndexValues = this.state.data.map( row => {
       return row.map(indexValue => {
-        return <p>{indexValue}</p>
+        return <div>{indexValue}</div>
       })
     })
 
