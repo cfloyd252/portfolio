@@ -36,12 +36,49 @@ function TwentyFortyEight() {
 
       let rand1 = Math.floor(Math.random() * 4)
       let rand2 = Math.floor(Math.random() * 4)
-      console.log(rand1)
-      console.log(rand2)
 
       if (grid[rand1][rand2] === 0) {
         grid[rand1][rand2] = Math.random() > 0.5 ? 2 : 4;
         added = true;
+      }
+    }
+  }
+
+  //Swipt Left
+  const swipeLeft = () => {
+    let oldGrid = gridData;
+    let newArray = cloneDeep(gridData);
+
+    for (let i = 0; i < 4; i++) {
+      let row = newArray[i];
+      let slowPointer = 0;
+      let fastPointer = 1;
+
+      while (slowPointer < 4) {
+        if (fastPointer === 4) {
+          fastPointer = slowPointer + 1;
+          slowPointer++;
+          continue
+        }
+        if (row[slowPointer] === 0 && row[fastPointer] === 0) {
+          fastPointer++;
+        } else if (row[slowPointer] === 0 && row[fastPointer !== 0]) {
+          row[slowPointer] = row[fastPointer];
+          row[fastPointer] = 0;
+          fastPointer++;
+        } else if (row[slowPointer] !== 0 && row[fastPointer] === 0) {
+          fastPointer++;
+        } else if (row[slowPointer] !== 0 && row[fastPointer] !== 0) {
+          if (row[slowPointer] === row[fastPointer]) {
+            row[slowPointer] = row[slowPointer] + row[fastPointer];
+            row[fastPointer] = 0;
+            fastPointer = slowPointer + 1;
+            slowPointer++;
+          } else {
+            slowPointer++;
+            fastPointer = slowPointer + 1;
+          }
+        }
       }
     }
   }
