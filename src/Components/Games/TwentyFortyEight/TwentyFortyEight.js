@@ -46,11 +46,10 @@ function TwentyFortyEight() {
 
   //Swipt Left
   const swipeLeft = () => {
-    let oldGrid = gridData;
-    let newArray = cloneDeep(gridData);
+    let newGrid = cloneDeep(gridData);
 
     for (let i = 0; i < 4; i++) {
-      let row = newArray[i];
+      let row = newGrid[i];
       let slowPointer = 0;
       let fastPointer = 1;
 
@@ -62,7 +61,7 @@ function TwentyFortyEight() {
         }
         if (row[slowPointer] === 0 && row[fastPointer] === 0) {
           fastPointer++;
-        } else if (row[slowPointer] === 0 && row[fastPointer !== 0]) {
+        } else if (row[slowPointer] === 0 && row[fastPointer] !== 0) {
           row[slowPointer] = row[fastPointer];
           row[fastPointer] = 0;
           fastPointer++;
@@ -80,7 +79,17 @@ function TwentyFortyEight() {
           }
         }
       }
+
+      setGridData(newGrid)
     }
+
+    addNewNumber(newGrid)
+    setGridData(newGrid)
+  }
+
+  //handle key down
+  const handleKeyDown = (e) => {
+    console.log('hi')
   }
 
   const displayGrid = gridData.map( row => {
@@ -95,6 +104,7 @@ function TwentyFortyEight() {
       <div id='grid'>
         {displayGrid}
       </div>
+      <button onClick={ e => swipeLeft()}>Move Left</button>
     </div>
   )
 }
