@@ -44,8 +44,9 @@ function TwentyFortyEight() {
     }
   }
 
-  //Swipt Left
+  //Swipe Left
   const swipeLeft = () => {
+    let oldGrid = gridData;
     let newGrid = cloneDeep(gridData);
 
     for (let i = 0; i < 4; i++) {
@@ -83,8 +84,58 @@ function TwentyFortyEight() {
       setGridData(newGrid)
     }
 
-    addNewNumber(newGrid)
-    setGridData(newGrid)
+    if (oldGrid !== newGrid) {
+      addNewNumber(newGrid)
+      setGridData(newGrid)
+    }
+    
+  }
+
+  //Swipe RIght
+  const swipeRight = () => {
+    let oldGrid = gridData;
+    let newGrid = cloneDeep(gridData);
+
+    for (let i = 0; i < 4; i++) {
+      let row = newGrid[i];
+      let slowPointer = 3;
+      let fastPointer = 2;
+
+      while (slowPointer > -1) {
+        if (fastPointer === -1) {
+          fastPointer = slowPointer - 1;
+          slowPointer--;
+          continue
+        }
+        if (row[slowPointer] === 0 && row[fastPointer] === 0) {
+          fastPointer--;
+        } else if (row[slowPointer] === 0 && row[fastPointer] !== 0) {
+          row[slowPointer] = row[fastPointer];
+          row[fastPointer] = 0;
+          fastPointer--;
+        } else if (row[slowPointer] !== 0 && row[fastPointer] === 0) {
+          fastPointer--;
+        } else if (row[slowPointer] !== 0 && row[fastPointer] !== 0) {
+          if (row[slowPointer] === row[fastPointer]) {
+            row[slowPointer] = row[slowPointer] + row[fastPointer];
+            row[fastPointer] = 0;
+            fastPointer = slowPointer - 1;
+            slowPointer--;
+          } else {
+            slowPointer--;
+            fastPointer = slowPointer - 1;
+          }
+        }
+      }
+
+      setGridData(newGrid)
+    }
+
+    if (oldGrid !== newGrid) {
+      addNewNumber(newGrid)
+      setGridData(newGrid)
+    }
+    
   }
 
   //handle key down
@@ -104,7 +155,7 @@ function TwentyFortyEight() {
       <div id='grid'>
         {displayGrid}
       </div>
-      <button onClick={ e => swipeLeft()}>Move Left</button>
+      <button onClick={ e => swipeRight()}>Move Right</button>
     </div>
   )
 }
